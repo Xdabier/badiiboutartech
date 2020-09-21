@@ -233,7 +233,7 @@ textarea:disabled {
     min-width: 70px;
     min-height: 70px;
     border-radius: 6px;
-    background-image: url("img/avatar.jpg");
+    background-image: url("../img/avatar.jpg");
     background-position: center;
     background-size: 100px;
 }
