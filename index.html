@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "styles/styles.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "styles/common-values.css"/>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Badii Boutar</title>
+</head>
+<body class="full-view-width full-view-height">
+<div class="centerHorizontally full-width full-height justifyAndAlignLeftForHorizontal">
+
+    <!--////////////////////////////////////////////////////////////////////////////////-->
+    <!--/////////////////////////////// SIDE MENU //////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="centerVertically justifyAndAlignTopForVertical side-bar full-height">
+        <div id="sideBar" class="centerVertically justifyAndAlignTopForVertical side-bar-content">
+            <div class="side-header margin-10" onclick="closeSideNav()">
+                <h1 class="main-title">Badii Boutar</h1>
+                <p class="name-activity">
+                    <span class="dot"></span>
+                    <span>You</span>
+                </p>
+            </div>
+
+            <h2 class="sub-title margin-10">Channels</h2>
+            <div class="loading-bar wbg w80 h15p margin-10"></div>
+            <div class="loading-bar wbg w70 h15p margin-10"></div>
+            <div class="padding-10 selected-button" onclick="closeSideNav()">
+                #welcome-abroad
+            </div>
+            <div class="padding-10 not-selected-button" onclick="openLink('https://www.upwork.com/o/profiles/users/~01872f70902ebffe57/')">
+                #up-work
+            </div>
+            <div class="padding-10 not-selected-button" onclick="openLink('https://www.linkedin.com/in/badiiboutar/')">
+                #linkedin
+            </div>
+            <div class="padding-10 not-selected-button" onclick="openLink('https://github.com/Xdabier')">
+                #github
+            </div>
+            <div class="loading-bar wbg w50 h15p margin-10"></div>
+            <div class="loading-bar wbg w80 h15p margin-10"></div>
+            <div class="loading-bar wbg w40 h15p margin-10"></div>
+            <div class="loading-bar wbg w20 h15p margin-10"></div>
+            <div class="loading-bar wbg w80 h15p margin-10"></div>
+            <h2 class="sub-title margin-10">Direct messages</h2>
+
+            <div class="margin-10 online-user" onclick="openEmail()">
+                <span class="dot"></span>
+                <span>Badii</span>
+            </div>
+            <div class="loading-bar wbg w50 h15p margin-10"></div>
+            <div class="loading-bar wbg w80 h15p margin-10"></div>
+            <div class="loading-bar wbg w70 h15p margin-10"></div>
+            <br>
+
+            <p class="margin-10">
+               E-mail: <a href="mailto:bbadii@protonmail.com" target="_blank">bbadii@protonmail.com</a>
+            </p>
+
+            <p class="margin-10">
+                <a href="https://github.com/Xdabier/badiiboutartech" target="_blank">source</a> | by <a href="https://github.com/Xdabier" target="_blank">@xdabier</a>
+            </p>
+            
+        </div>
+    </div>
+
+<!--////////////////////////////////////////////////////////////////////////////////-->
+<!--////////////////////////// MAIN CONTENT AND TEXTS //////////////////////////////-->
+<!--////////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="centerVertically spaceBetween main-content" >
+        <div class="main-content-header centerHorizontally justifyAndAlignLeftForHorizontal">
+            <button onclick="openSideNav()" class="menu-btn">
+                <img src="styles/img/menu_open-24px.svg" alt="">
+            </button>
+            <span>#welcome-abroad</span>
+        </div>
+        <div class="main-content-texts centerVertically justifyAndAlignBottomForVertical" onclick="closeSideNav()">
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="img"></div>
+                <div class="text-content">
+                    <span class="my-name">Badii Boutar <span>11:59</span></span>
+                    <p>Hello there!! 🖖 🖖</p>
+                </div>
+            </div>
+
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="no-img"></div>
+                <div class="text-content">
+                    <p>this is <strong>Badii Boutar</strong> a Fullstack JS developer. 😊</p>
+                </div>
+            </div>
+
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="no-img"></div>
+                <div class="text-content">
+                    <p>with more than three years experience in the field.</p>
+                </div>
+            </div>
+
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="no-img"></div>
+                <div class="text-content">
+                    <p>I worked on many web projects, using NodeJs and express, sometimes socket.io integration,  managing a MongoDB, couchbase or MySQL databases.</p>
+                </div>
+            </div>
+
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="no-img"></div>
+                <div class="text-content">
+                    <p>and consuming the APIs using Frontends I created using Angular 2+, ReactJS or even Ionic or React native.</p>
+                </div>
+            </div>
+
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="no-img"></div>
+                <div class="text-content">
+                    <p>I excel in all the stages of the software development, starting from UI/UX design, going through designing the database architecture and getting the project to production.</p>
+                </div>
+            </div>
+
+            <div class="centerHorizontally justifyAndAlignLeftForHorizontal first-text">
+                <div class="no-img"></div>
+                <div class="text-content">
+                    <p>You can reach me out using this textbox below 👇👇 😁😁</p>
+                </div>
+            </div>
+        </div>
+        <div class="centerVertically justifyAndAlignTopForVertical message-input h90p" onclick="openEmail()">
+            <textarea class="h50p" placeholder="Jot something down" disabled></textarea>
+            <div class="centerHorizontally justifyAndAlignRightForHorizontal input-bar h40p">
+                <button class="send-btn">
+                    <span class="icon-send-24px"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////-->
+    <!--/////////////////////////////// FAKE LOADER ////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="centerVertically justifyAndAlignTopForVertical side-loader full-height">
+        <br>
+        <div class="loading-bar lbg w80 h50p br6 margin-10"></div>
+        <div class="loading-bar lbg w70 h15p margin-10"></div>
+        <div class="loading-bar lbg w80 h15p margin-10"></div>
+        <br>
+        <hr>
+        <div class="loading-bar lbg w80 h15p margin-10"></div>
+        <hr>
+        <hr>
+        <div class="loading-bar lbg w80 h15p margin-10"></div>
+        <hr>
+    </div>
+</div>
+</body>
+</html>
