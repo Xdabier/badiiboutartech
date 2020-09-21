@@ -1,7 +1,6 @@
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden !important;
     background-color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4 !important;
@@ -29,7 +28,7 @@ html {
     text-transform: none;
     line-height: 1;
     opacity: .7;
-    font-size: 20px;
+    font-size: 15px;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -57,7 +56,6 @@ img {
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden !important;
     background-color: whitesmoke;
 }
 
@@ -80,7 +78,7 @@ body {
 }
 
 .loading-bar {
-    margin-top: 5px;
+    margin-top: 4px;
     opacity: .3;
     border-radius: 50px;
 }
@@ -157,7 +155,6 @@ hr {
     border: 1px solid #b1b1b1;
     border-radius: 4px;
     width: 90%;
-    z-index: 99;
 }
 
 .message-input textarea {
@@ -205,9 +202,8 @@ textarea:disabled {
 }
 
 .main-content-header {
-    padding: 0 10px 0 10px;
-    height: 70px;
-    width: calc(100% - 20px);
+    padding: 0 5px 0 5px;
+    width: calc(100% - 10px);
 }
 
 .menu-btn:hover {
@@ -251,13 +247,9 @@ textarea:disabled {
     align-items: flex-start !important;
 }
 
-.main-content-texts {
-    width: 90%;
-    align-items: flex-start !important;
-}
-
 .first-text {
     align-items: flex-start !important;
+    width: 90%;
 }
 
 .first-text .img {
@@ -308,11 +300,11 @@ textarea:disabled {
     }
 
     .first-text .no-img, .first-text .img {
-        width: 50px;
-        height: 50px;
-        min-width: 50px;
-        min-height: 50px;
-        background-size: 70px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        background-size: 60px;
     }
 
     .side-bar {
@@ -322,14 +314,16 @@ textarea:disabled {
     #sideBar {
         background: #443242!important;
         width: 70vw;
-        height: 100vh;
+        max-height: 100vh;
+        overflow-y: scroll;
         position:relative;
-        left: -300px;
+        left: -380px;
         z-index: 100;
     }
 
     .main-content {
-        width: calc(100% - 40px);
+        padding: 10px;
+        width: calc(100% - 20px);
     }
 
     .side-loader {
@@ -337,7 +331,7 @@ textarea:disabled {
     }
 
     .text-content p {
-        font-size: 15px;
+        font-size: 13px;
         margin: 3px;
     }
 }
@@ -398,6 +392,9 @@ textarea:disabled {
     .side-bar-content {
         width: 100%;
         height: 100%;
+    }
+    .side-bar {
+        width: 25%;
     }
 
 }
